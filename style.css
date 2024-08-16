@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #000000, #00000087);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 0.1s ease-in-out;
+}
+
+/* Container Styling */
+#home-container {
+    max-width: 800px;
+    width: 100%;
+    /* background: #83838364; */
+    background: url('blur.png') no-repeat center center ;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.948);
+    margin-top: 20px;
+    animation: slideIn 6s ease-out;
+    
+}
+
+/* Profile Section */
+#profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+#profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3.5px solid #14a0b2;
+    transition: transform 0.3s ease;
+}
+
+#profilePicture:hover {
+    transform: scale(1.1);
+}
+
+#user-name {
+    font-size: 28px;
+    margin: 0;
+    color: #e9d6a6;
+    font-weight: 500;
+}
+
+#user-email {
+    font-size: 18px;
+    color: #90da08;
+}
+
+/* Create Blog Section */
+#create-blog {
+    margin-bottom: 30px;
+}
+
+#blog-content {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 3px solid #060101;
+    font-size: 18px;
+    box-sizing: border-box;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#blog-content:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+#add-blog {
+    background-color: #1fa86f;
+    color: #f0f5b1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add-blog:hover {
+    background-color:  #007bff;
+    transform: scale(1.05);
+}
+#my-blogs {
+ 
+        background-color: #007bff;
+        color: #f0f5b1;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    #sign-out {
+ 
+        background-color: #122002;
+        color: #f0f5b1;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    
+
+
+/* Blog Items Section */
+#blog-container {
+    margin-top: 30px;
+}
+
+.blog-item {
+    background: #ffffff;
+    border: 1px solid #090101;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(72, 18, 18, 0.838);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.blog-item p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.blog-item button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-item button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Blogging App</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <label for="displayName">Display Name</label>
+            <input type="text" id="displayName" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+
+            <label for="profilePicture">Profile Picture</label>
+            <input type="file" id="profilePicture" accept="image/*" />
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>
