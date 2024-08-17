@@ -13,7 +13,7 @@ auth.onAuthStateChanged(async (user) => {
 
 // Back to Home button event listener
 document.getElementById('back-to-home').addEventListener('click', () => {
-    window.location.href = 'blog.html'; // Redirect to Home page
+    window.location.href = 'index.html'; // Redirect to Home page
 });
 
 // Display blogs function

@@ -9,7 +9,7 @@ document.getElementById('signin-form').addEventListener('submit', async (event) 
 
     try {
         await signInWithEmailAndPassword(auth, email, password);
-        window.location.href = 'blog.html'; // Redirect to the home page
+        window.location.href = 'index.html'; // Redirect to the home page
     } catch (error) {
         console.error('Error during sign-in:', error);
         alert('Failed to sign in.');

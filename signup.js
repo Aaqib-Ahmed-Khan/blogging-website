@@ -33,7 +33,7 @@ document.getElementById('signup-form').addEventListener('submit', async (event) 
             email: email
         });
 
-        window.location.href = 'blog.html';
+        window.location.href = 'index.html';
     } catch (error) {
         console.error('Error during sign-up:', error);
         alert('Failed to sign up.');
